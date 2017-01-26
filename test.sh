@@ -61,6 +61,7 @@ time iptb run 1 ipfs get -o "$ODIR" "$OUT_HASH"
 
 
 # if run was successful, save the spec to a file with its hash
+jq "{\"$SPEC_HASH\" : . }" "$CLEAN_SEPC" | jq -s '.[0] * .[1]' past_specs.json - | sponge past_specs.json
 
 iptb stop
 CLEAN_EXIT=1

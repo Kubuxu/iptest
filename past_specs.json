@@ -1,0 +1,13 @@
+{
+  "3f69a85f1a4f3f28": {
+    "dataset": {
+      "depth": 3,
+      "dirnum": 5,
+      "files": 20,
+      "filesize": 100000
+    },
+    "nosync": false,
+    "rawleaves": false,
+    "routing": "dht"
+  }
+}
