@@ -1,0 +1,11 @@
+{
+	"nosync": false,
+	"routing": "dht",
+	"dataset": {
+		"files": 20,
+		"filesize": 100000,
+		"depth": 3,
+		"dirnum": 5
+	},
+	"rawleaves": false
+}
