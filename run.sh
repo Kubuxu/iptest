@@ -47,13 +47,13 @@ iptb connect 0 "[1-$((IPTEST_NODES-1))]"
 
 
 TMPFILE=$(mktemp)
-for i in 0 $((IPTEST_NODES - 1)); do
+for i in $(seq 0 $((IPTEST_NODES - 1))); do
 	awk -F '/' '{print "\"" $3 ":" $5 "\""}' "$(iptb get path $i)"/api
 done | jq -s '[ .[] | {targets: [.]} ]' > "$TMPFILE"
 
 jq "[ .[] | .labels = { \"hash\": \"$SPEC_HASH\" } ]" "$TMPFILE" | sponge "$TMPFILE"
 
-for i in 0 $((IPTEST_NODES - 1)); do
+for i in $(seq 0 $((IPTEST_NODES - 1))); do
 	jq '.['$i'].labels.role = "'"$(iptest_nodes_roles $i)\"" "$TMPFILE" | sponge "$TMPFILE"
 done
 
