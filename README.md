@@ -4,7 +4,7 @@ iptest
 Simple add test runner.
 Usage:
 ```
-./test.sh <some-test-spec>
+./run.sh <some-test-spec>
 ```
 Requires `ipfs`, `iptb`, `jq`, `sponge`.
 
