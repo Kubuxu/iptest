@@ -33,6 +33,7 @@ iptest_run() {
 	REFS1=$!
 	time iptb run 2 ipfs refs -r "$OUT_HASH" > /dev/null &
 	REFS2=$!
+	wait $REFS1 $REFS2
 	echo "Replication to two peers took: $SECONDS seconds."
 
 

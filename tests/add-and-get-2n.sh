@@ -25,6 +25,7 @@ iptest_run() {
 	OUT_HASH=$(cat "$TMPF")
 
 	echo "Getting:"
+	SECONDS=0
 	time iptb run 1 ipfs get -o "$ODIR" "$OUT_HASH"
 	echo "Get took: $SECONDS seconds."
 

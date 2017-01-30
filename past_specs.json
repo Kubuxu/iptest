@@ -46,5 +46,17 @@
     "rawleaves": false,
     "routing": "dht",
     "test": "add-replicate-one-get-4n.sh"
+  },
+  "05b1599d92ade458": {
+    "dataset": {
+      "depth": 3,
+      "dirnum": 5,
+      "files": 100,
+      "filesize": 50000
+    },
+    "nosync": false,
+    "rawleaves": false,
+    "routing": "dht",
+    "test": "add-replicate-one-get-4n.sh"
   }
 }
