@@ -1,13 +1,26 @@
 {
-  "3f69a85f1a4f3f28": {
+  "1b4e5fb274689bd0": {
     "dataset": {
       "depth": 3,
       "dirnum": 5,
-      "files": 20,
+      "files": 200,
       "filesize": 100000
     },
     "nosync": false,
     "rawleaves": false,
-    "routing": "dht"
+    "routing": "dht",
+    "test": "add-and-get-2n.sh"
+  },
+  "319a286bf79772af": {
+    "dataset": {
+      "depth": 3,
+      "dirnum": 5,
+      "files": 500,
+      "filesize": 500000
+    },
+    "nosync": false,
+    "rawleaves": false,
+    "routing": "dht",
+    "test": "add-and-get-2n.sh"
   }
 }
