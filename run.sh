@@ -12,7 +12,7 @@ CLEAN_SEPC=$(mktemp)
 jq -cS . "$SPEC" > "$CLEAN_SEPC"
 SPEC_HASH=$(sha256sum "$CLEAN_SEPC" | head -c 16)
 echo "Spec ID:"
-echo "SPEC_HASH"
+echo "$SPEC_HASH"
 echo
 
 geto() {

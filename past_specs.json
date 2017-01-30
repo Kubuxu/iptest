@@ -22,5 +22,29 @@
     "rawleaves": false,
     "routing": "dht",
     "test": "add-and-get-2n.sh"
+  },
+  "89d8af486f9ff672": {
+    "dataset": {
+      "depth": 3,
+      "dirnum": 5,
+      "files": 20,
+      "filesize": 100000
+    },
+    "nosync": false,
+    "rawleaves": false,
+    "routing": "dht",
+    "test": "add-and-get-2n.sh"
+  },
+  "017ae0c51a79919b": {
+    "dataset": {
+      "depth": 3,
+      "dirnum": 5,
+      "files": 20,
+      "filesize": 100000
+    },
+    "nosync": false,
+    "rawleaves": false,
+    "routing": "dht",
+    "test": "add-replicate-one-get-4n.sh"
   }
 }
